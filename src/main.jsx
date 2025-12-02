@@ -8,6 +8,11 @@ import ErrorPage from "./components/ErrorPage.jsx";
 import Home from "./pages/Home.jsx";  
 import AboutSchool from "./pages/AboutSchool.jsx";
 import Contact from "./pages/Contact.jsx";  
+import Notice  from "./pages/Notice/Notice.jsx";  
+import Gallery from "./pages/Gallery.jsx";
+import Results from "./pages/Results.jsx";
+import Routine from "./pages/Routine.jsx"
+import Faculty from "./pages/Faculty/Faculty.jsx";
 
 // Define the routes for the app
 const router = createBrowserRouter([
@@ -28,6 +33,26 @@ const router = createBrowserRouter([
         path: "/contact",  // Corrected path to '/about-us'
         element: <Contact />,  
       },
+      {
+        path: "/notices",  // Corrected path to '/about-us'
+        element: <Notice />,  
+      },
+      {
+        path: "/gallery",
+        element:<Gallery />
+      },
+      {
+        path:"/results",
+        element:<Results />
+      },
+      {
+        path:"/routine",
+        element:<Routine />
+      },
+        {
+        path:"/teachers-staff",
+        element:<Faculty />
+      }
      
     ],
   },
