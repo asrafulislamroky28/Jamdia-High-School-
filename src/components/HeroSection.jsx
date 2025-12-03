@@ -1,12 +1,12 @@
-import { useState } from 'react'; // Only import useState
-
+import { useState } from 'react'; 
+import POSTER from "../images/Poster.png" // Your image file import
 
 export default function HeroSection() {
   const [imgLoaded, setImgLoaded] = useState(false);
 
   const instituteInfo = {
     name: "জামদিয়া মাধ্যমিক বিদ্যালয়",
-    institution_image: "/path/to/school-image.jpg", // Replace with your actual image URL
+    institution_image: POSTER, // Using the imported image file here
   };
 
   const bgImage = instituteInfo?.institution_image;
@@ -41,12 +41,14 @@ export default function HeroSection() {
             {instituteInfo?.name}
           </h1>
           {/* Expanded text content in the p tag */}
-         
+          <p className="text-lg mb-6">
+            আমাদের বিদ্যালয় শিক্ষার মান উন্নত করতে প্রতিশ্রুতিবদ্ধ, যেখানে প্রতিটি ছাত্র/ছাত্রী সর্বোচ্চ শিক্ষা ও বিকাশের সুযোগ পায়।
+          </p>
 
           {/* Call to Action Button */}
           <div className="mt-4">
             <a
-              href="#about-us"
+              href="/about"
               className="px-6 py-3 text-white bg-[#91386d] hover:bg-[#16946a] rounded-full text-lg font-semibold transition duration-300"
             >
               আমাদের সম্পর্কে জানুন

@@ -144,8 +144,8 @@ export default function Contact() {
                 <FaMapMarkerAlt className="w-6 h-6 flex-shrink-0 mt-1 text-amber-300" />
                 <div>
                   <h3 className="text-xl sm:text-2xl font-semibold mb-1">ঠিকানা</h3> 
-                  <p className="text-gray-200">গ্রাম: জামদিয়া, উপজেলা: বাঘারপাড়া</p>
-                  <p className="text-gray-200">জেলা: যশোর</p>
+                  <p className="text-gray-200">গ্রাম: জামদিয়া, ডাকঘর: রুপদিয়-৭৪০৫,  জেলা: যশোর, উপজেলা: বাঘারপাড়া,</p>
+               
                 </div>
               </div>
 

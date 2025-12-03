@@ -12,17 +12,15 @@ export default function Navbar() {
   return (
     // FIX 1: Reduced Vertical Padding (py-3) to reduce navbar height
     <nav className="bg-[#006064] text-white p-10 shadow-lg">
-      <div className="max-w-screen-xl mx-auto flex justify-between items-center">
-        {/* Left Section: School Name/Logo - FIX 2: Added flex for a potential logo image */}
+      <div className="max-w-7xl mx-auto flex justify-between items-center">
+        {/* Left Section: School Name/Logo */}
         <div className="flex items-center space-x-4">
-          {/* Optional: Add Logo Placeholder here if needed */}
-          {/* <img src="/path/to/logo.png" alt="School Logo" className="h-10 w-auto" /> */}
           <div className="text-3xl font-bold" style={bengaliFontStyle}>
             <h1>জামদিয়া মাধ্যমিক বিদ্যালয়</h1>
           </div>
         </div>
 
-        {/* Desktop Menu - FIX 3: Used justify-end, flex-grow, and space-x-6 for proper distribution on the right */}
+        {/* Desktop Menu - Used justify-end, flex-grow, and space-x-6 for proper distribution on the right */}
         <div className="hidden md:flex w-full md:w-auto md:ml-auto md:space-x-4 lg:space-x-8">
           <NavLink
             to="/"
@@ -79,6 +77,15 @@ export default function Navbar() {
             style={bengaliFontStyle}
           >
             যোগাযোগ
+          </NavLink>
+
+          {/* Login Button */}
+          <NavLink
+            to="/login"
+            className="text-xl lg:text-2xl text-white hover:text-[#ffcc00] transition duration-300 transform hover:scale-105"
+            style={bengaliFontStyle}
+          >
+            লগইন
           </NavLink>
         </div>
 
@@ -151,6 +158,15 @@ export default function Navbar() {
             style={bengaliFontStyle}
           >
             যোগাযোগ
+          </NavLink>
+
+          {/* Mobile Login Button */}
+          <NavLink
+            to="/login"
+            className="block py-2 text-lg text-white hover:text-[#ffcc00] transition duration-300"
+            style={bengaliFontStyle}
+          >
+            লগইন
           </NavLink>
         </div>
       )}

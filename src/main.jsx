@@ -13,6 +13,9 @@ import Gallery from "./pages/Gallery.jsx";
 import Results from "./pages/Results.jsx";
 import Routine from "./pages/Routine.jsx"
 import Faculty from "./pages/Faculty/Faculty.jsx";
+import Login from "./components/Login/login.jsx";  
+import Register from "./components/Register/Register.jsx" 
+
 
 // Define the routes for the app
 const router = createBrowserRouter([
@@ -52,6 +55,14 @@ const router = createBrowserRouter([
         {
         path:"/teachers-staff",
         element:<Faculty />
+      },
+      {
+        path:"/login",
+        element:<Login />
+      },
+      {
+        path:"/register",
+        element:<Register />
       }
      
     ],
